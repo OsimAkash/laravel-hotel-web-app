@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bukti Pembayaran Hotel Hebat</title>
+    <title>Bukti Pembayaran Hotel BD</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-body">
                     <hr>
-                <h3 class="text text-primary fw-bold">HOTEL HEBAT</h3>
+                <h3 class="text text-primary fw-bold">HOTEL BD</h3>
                 <h6>Payment Receipt</h6>
                 <p>Jl. Mana aja No 07 California 177854 (+1) 234-1233</p>
                 <hr>

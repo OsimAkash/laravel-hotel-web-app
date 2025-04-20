@@ -19,7 +19,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a class="h1">Hotel<span style="color: blue"> Hebat</span></a>
+      <a class="h1">Hotel<span style="color: blue"> BD</span></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
