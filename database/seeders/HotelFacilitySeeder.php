@@ -18,7 +18,7 @@ class HotelFacilitySeeder extends Seeder
         $facilityRoom = [
             [
                 'facility_name' => 'Kolam Renang',
-                'detail' => 'Kolam renang dengan ukuran besar dan nyaman',
+                'detail' => 'Large and comfortable swimming pool',
             ],
             [
                 'facility_name' => 'Gym',
@@ -40,6 +40,7 @@ class HotelFacilitySeeder extends Seeder
                 'facility_name' => 'Sport Area',
                 'detail' => 'bagus pokoknya',
             ],
+
 
         ];
 

@@ -7,7 +7,16 @@
 				<div class="container">
 					<div class="banner_content text-center">
 						<h6>Away from monotonous life</h6>
-						<h2>Hotel BD</h2>
+						<div class="content">
+                            <h1 class="title">Hotel BD
+                              <div class="aurora">
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                                <div class="aurora__item"></div>
+                              </div>
+                            </h1>
+                          </div>
 						<p>Hotel bersih, aman, nyaman, sehat<br> Harga yang terjangkau anda dapat menginap disini</p>
 						<a href="#types" class="btn theme_btn button_hover">Get Started</a>
 					</div>

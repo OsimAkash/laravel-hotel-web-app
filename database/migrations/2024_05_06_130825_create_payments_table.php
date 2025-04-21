@@ -18,7 +18,7 @@ class CreatePaymentsTable extends Migration
             $table->string('user_id');
             $table->string('transaction_id');
             $table->string('price');
-            $table->string('bukti');
+            $table->string('proof');
             $table->timestamps();
         });
     }
