@@ -16,15 +16,15 @@
                 <div class="form-group">
                     <div class="card">
                         <div class="card-header">
-                            Detail Kamar
+                            Detail Waist
                         </div>
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-2">{{'Tipe Kamar : ' . ' ' . $data->name}}</h6>
-                            <h6 class="card-subtitle mb-2">{{'Fasilitas Kamar : ' . ' ' . $data->facilities}}</h6>
-                            <h6 class="card-subtitle mb-2">{{'Kapasitas Kasur : ' . '2' }}</h6>
-                            <h6 class="card-subtitle mb-2">{{'Harga Permalam : '}}@currency($data->price)</h6>
-                            <h6 class="card-subtitle mb-2">{{'Kamar Tersedia : ' . ' ' . $jumlahTersedia}}</h6>
-                            <h6 class="card-subtitle mb-2">{{'Keterangan Tipe Kamar : ' . ' ' }} <br>
+                            <h6 class="card-subtitle mb-2">{{'Room Type             : ' . ' ' . $data->name}}</h6>
+                            <h6 class="card-subtitle mb-2">{{'Room Facilities       : ' . ' ' . $data->facilities}}</h6>
+                            <h6 class="card-subtitle mb-2">{{'Mattress Capacity     : ' . '2' }}</h6>
+                            <h6 class="card-subtitle mb-2">{{'Price Per Night       : '}}@currency($data->price)</h6>
+                            <h6 class="card-subtitle mb-2">{{'Available Rooms       : ' . ' ' . $jumlahTersedia}}</h6>
+                            <h6 class="card-subtitle mb-2">{{'Room Type Description : ' . ' ' }} <br>
                                 <p class="ml-3">{{ $data->information }}</p></h6>
                         </div>
                     </div>

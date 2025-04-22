@@ -58,7 +58,7 @@
                                 <a href="{{ route('detail.room', $item->id) }}">
                                     <h5>@currency($item->price)<small>/night</small></h5>
                                 </a>
-                                <p>Kamar Tersedia : {{ $item->getTotalRooms->count() }}</p>
+                                <p>Available Rooms : {{ $item->getTotalRooms->count() }}</p>
 
                             </div>
                         </div>

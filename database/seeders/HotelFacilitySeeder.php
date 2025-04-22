@@ -17,28 +17,28 @@ class HotelFacilitySeeder extends Seeder
         HotelFacility::truncate();
         $facilityRoom = [
             [
-                'facility_name' => 'Kolam Renang',
+                'facility_name' => 'Swimming pool',
                 'detail' => 'Large and comfortable swimming pool',
             ],
             [
                 'facility_name' => 'Gym',
-                'detail' => 'Gym dengan nuansa asik modern',
+                'detail' => 'Gym with a modern, cool feel',
             ],
             [
                 'facility_name' => 'Sauna',
-                'detail' => 'bagus pokoknya',
+                'detail' => 'its good anyway',
             ],
             [
                 'facility_name' => 'Caffe In Hotel',
-                'detail' => 'bagus pokoknya',
+                'detail' => 'its good anyway',
             ],
             [
                 'facility_name' => 'Toy Museum',
-                'detail' => 'bagus pokoknya',
+                'detail' => 'its good anyway',
             ],
             [
                 'facility_name' => 'Sport Area',
-                'detail' => 'bagus pokoknya',
+                'detail' => 'its good anyway',
             ],
 
 
