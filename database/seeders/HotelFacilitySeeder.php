@@ -38,7 +38,7 @@ class HotelFacilitySeeder extends Seeder
             ],
             [
                 'facility_name' => 'Sport Area',
-                'detail' => 'its good anyway',
+                'detail' => 'its good anyway', 
             ],
 
 
