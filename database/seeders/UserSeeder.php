@@ -17,32 +17,32 @@ class UserSeeder extends Seeder
         User::truncate();
         $user = [
             [
-                'name' => 'Hamba Allah',
-                'email' => 'adminhh@gmail.com',
+                'name' => 'Osim Roy',
+                'email' => 'osim@gmail.com',
                 'phone' => '0812345678901',
-                'password' => bcrypt('hhebatadmin'),
+                'password' => bcrypt('osim123'),
                 'role' => 'admin',
             ],
             [
-                'name' => 'Daniel',
-                'email' => 'daniel14@gmail.com',
+                'name' => 'Raihan Ahammed',
+                'email' => 'raihan@gmail.com',
                 'phone' => '0812345678901',
                 'role' => 'customer',
-                'password' => bcrypt('danielqwe'),
+                'password' => bcrypt('raihan123'),
             ],
             [
-                'name' => 'Muhammad Fauzan',
-                'email' => 'fauzan14072004@gmail.com',
+                'name' => 'Sultana Nasrin',
+                'email' => 'sultana@gmail.com',
                 'phone' => '0812345678901',
                 'role' => 'customer',
-                'password' => bcrypt('mfau1407'),
+                'password' => bcrypt('sultana123'),
             ],
             [
-                'name' => 'Receptionis',
-                'email' => 'receptionis@gmail.com',
+                'name' => 'Kawsar',
+                'email' => 'kawsar@gmail.com',
                 'phone' => '0812345678901',
                 'role' => 'resepsionis',
-                'password' => bcrypt('hhebatreceptionis'),
+                'password' => bcrypt('kawsar123'),
             ],
         ];
 

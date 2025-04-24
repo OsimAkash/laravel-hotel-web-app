@@ -9,7 +9,7 @@
             <div class="section-heading">
                 <h2>
                     <center>
-                        Daftar Transaksi
+                        Transaction List
                     </center>
                 </h2>
             </div>
@@ -19,19 +19,19 @@
                 <table class="table table-hover">
                     <thead>
                         <tr class="text-center">
-                            <th>Type Kamar</th>
-                            <th>Nomor Kamar</th>
-                            <th>Jumlah Pesanan</th>
-                            <th>Harga Permalam</th>
-                            <th>Total Harga</th>
-                            <th>Status Transaksi</th>
-                            <th>Aksi</th>
+                            <th>Room Type</th>
+                            <th>Room Number</th>
+                            <th>Number of Orders</th>
+                            <th>Price Per Night</th>
+                            <th>Total price</th>
+                            <th>Transaction Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         @if ($datas == '[]')
                             <tr class="text-center table-primary">
-                                <td colspan="7">Tidak ada transaksi</td>
+                                <td colspan="7">No transactions</td>
 
                             </tr>
                         @else
