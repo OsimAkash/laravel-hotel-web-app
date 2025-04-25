@@ -8,7 +8,7 @@
             <div class="card-header">
                 <h2>
                     <center>
-                        Daftar Transaksi
+                        Transaction List
                     </center>
                 </h2>
             </div>
@@ -22,13 +22,13 @@
                                         <th>Customer Name</th>
                                         <th>Phone Number</th>
                                         <th>Type Kamar</th>
-                                        <th>Jumlah Pesanan</th>
+                                        <th>Number of Orders</th>
                                         <th>Check in - Check out</th>
-                                        <th>Tanggal Pemesanan</th>
-                                        <th>Harga Permalam</th>
-                                        <th>Total Harga</th>
-                                        <th>Status Transaksi</th>
-                                        <th>Aksi</th>
+                                        <th>Order Date</th>
+                                        <th>Price Per Night</th>
+                                        <th>Total Price</th>
+                                        <th>Transaction Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
