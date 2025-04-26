@@ -49,7 +49,7 @@
                                         <input type="hidden" name="stok" value="{{ $jumlahTersedia }}">
 
                                         <div class="form-group">
-                                            <label for="jumlah">Jumlah Pesanan</label>
+                                            <label for="jumlah">Number of Orders</label>
                                             <input type="number" class="form-control" {{ $jumlahTersedia == 0 ? 'disabled' : ''  }} value="{{ $jumlahTersedia == 0 ? '0' : '1'  }}" min="1" max="{{ $jumlahTersedia }}" required name="jumlah" id="jumlah">
                                         </div>
                                         <div class="form-group">

@@ -65,13 +65,13 @@
                         <div class="form-radio ml-2">
                             <input class="form-radio-input" type="radio" name="gender" value="male" id="male">
                             <label class="form-radio-label" for="male">
-                                Laki-laki
+                                Man
                             </label>
                         </div>
                         <div class="form-radio ml-2">
                             <input class="form-radio-input" type="radio" name="gender" value="female" id="female">
                             <label class="form-radio-label" for="female">
-                                Perempuan
+                                Woman
                             </label>
                         </div>
                     </div>
@@ -117,12 +117,12 @@
                     <tr class="text-center">
                         <th>No</th>
                         <th>Customer Name</th>
-                        <th>Type Kamar</th>
-                        <th>Nomor Kamar</th>
-                        <th>Jumlah Pesanan</th>
+                        <th>Room Type</th>
+                        <th>Room Number</th>
+                        <th>Number of Orders</th>
                         <th>Check in - Check out</th>
-                        <th>Tanggal Pemesanan</th>
-                        <th>Aksi</th>
+                        <th>Order Date</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>

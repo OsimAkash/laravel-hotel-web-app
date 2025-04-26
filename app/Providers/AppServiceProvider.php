@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('currency', function ( $expression ){
-            return "Tk. <?= number_format($expression,0,',','.'); ?>";
+            return "Tk. <?= number_format($expression,0,'10','.'); ?>";
         });
     }
 }

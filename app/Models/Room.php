@@ -18,4 +18,9 @@ class Room extends Model
     {
         return $this->belongsTo(RoomType::class, 'type_id', 'id');
     }
+
+    public function scopeAvailable($query)
+    {
+        return $query->where('status', 'available');
+    }
 }
