@@ -23,7 +23,7 @@
                             <h6 class="card-subtitle mb-2">{{'Room Facilities       : ' . ' ' . $data->facilities}}</h6>
                             <h6 class="card-subtitle mb-2">{{'Mattress Capacity     : ' . '2' }}</h6>
                             <h6 class="card-subtitle mb-2">{{'Price Per Night       : '}}@currency($data->price)</h6>
-                            <h6 class="card-subtitle mb-2">{{'Available Rooms       : ' . ' ' . $jumlahTersedia}}</h6>
+                            <h6 class="card-subtitle mb-2">{{'Available Rooms       : ' . ' ' . $amountAvailable}}</h6>
                             <h6 class="card-subtitle mb-2">{{'Room Type Description : ' . ' ' }} <br>
                                 <p class="ml-3">{{ $data->information }}</p></h6>
                         </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="card-body">
                             @auth
-                            @if ($jumlahTersedia == 0)
+                            @if ($amountAvailable == 0)
                                 <div class="form-group">
                                     <label for="jumlah">Jumlah Pesanan</label>
                                     <input type="text" class="form-control" disabled value="Full Book">
@@ -46,11 +46,11 @@
                                 <form action="{{ route('customer.book.now') }}" method="post">
                                     @csrf
                                         <input type="hidden" name="type_id" value="{{ $data->id }}">
-                                        <input type="hidden" name="stok" value="{{ $jumlahTersedia }}">
+                                        <input type="hidden" name="stok" value="{{ $amountAvailable }}">
 
                                         <div class="form-group">
                                             <label for="jumlah">Number of Orders</label>
-                                            <input type="number" class="form-control" {{ $jumlahTersedia == 0 ? 'disabled' : ''  }} value="{{ $jumlahTersedia == 0 ? '0' : '1'  }}" min="1" max="{{ $jumlahTersedia }}" required name="jumlah" id="jumlah">
+                                            <input type="number" class="form-control" {{ $amountAvailable == 0 ? 'disabled' : ''  }} value="{{ $amountAvailable == 0 ? '0' : '1'  }}" min="1" max="{{ $amountAvailable }}" required name="jumlah" id="jumlah">
                                         </div>
                                         <div class="form-group">
                                             <label for="check_in">Check In</label>

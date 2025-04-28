@@ -24,7 +24,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($datas as $data)
+                @foreach ($rooms as $data)
                     <tr>
                         <td>{{$loop->iteration}}</td>
                         <td>{{ $data->type_id }}</td>

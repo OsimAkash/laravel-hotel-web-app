@@ -138,8 +138,8 @@ class RoomTypeController extends Controller
     {
         if (!Auth::check() OR auth()->user()->role == 'customer') {
             $data = RoomType::find($id);
-            $jumlahTersedia = Room::where('status', '=', 'v')->where('type_id', '=', $id)->count();
-            return view('admin.roomType.detail-room', compact('data', 'jumlahTersedia'));
+            $amountAvailable = Room::where('status', '=', 'v')->where('type_id', '=', $id)->count();
+            return view('admin.roomType.detail-room', compact('data', 'amountAvailable'));
         }elseif (auth()->user()->role == 'admin') {
             return redirect()->route('home');
         } elseif(auth()->user()->role == 'resepsionis'){
