@@ -7,6 +7,9 @@
         <link rel="icon" href="image/favicon.png" type="image/png">
         <title>Hotel BD</title>
         <!-- Bootstrap CSS -->
+            <!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <link rel="stylesheet" href="{{ asset('template/vendors/linericon/style.css') }}">
         <link rel="stylesheet" href="{{ asset('template/css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ asset('template/vendors/owl-carousel/owl.carousel.min.css') }}">
@@ -152,5 +155,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 $('.alert').fadeOut('fast');
             }, 3000); // <-- time in milliseconds
         </script>
+
+        <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

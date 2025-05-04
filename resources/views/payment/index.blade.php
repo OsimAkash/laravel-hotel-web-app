@@ -9,7 +9,7 @@
         <div class="section-heading">
           <h2>
               <center>
-                  Pembayaran Kamar
+                Room Payment
               </center>
             </h2>
         </div>
@@ -21,12 +21,12 @@
                     <table class="table table-hover">
                         <thead>
                             <tr class="text-center">
-                                <th>Nomor Kamar</th>
-                                <th>Type Kamar</th>
-                                <th>Jumlah Pesanan</th>
-                                <th>Total Malam</th>
-                                <th>Harga Permalam</th>
-                                <th>Total Harga</th>
+                                <th>Room Number</th>
+                                <th>Room Type</th>
+                                <th>Number of Orders</th>
+                                <th>Total Night</th>
+                                <th>Price Per Night</th>
+                                <th>Total price</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -61,10 +61,10 @@
                                     <div class="form-row">
 
                                         <select name="pay_type" id="pay_type" class="form-control col-md-12 @error('pay_type') is-invalid @enderror" value="{{ old('pay_type') }}" required autocomplete="pay_type" autofocus>
-                                            <option value="dana">DANA</option>
-                                            <option value="ovo">OVO</option>
-                                            <option value="gopay">GOPAY</option>
-                                            <option value="mandiriva">Mandiri VA</option>
+                                            <option value="dana">FUNDS</option>
+                                            <option value="ovo">THIS</option>
+                                            <option value="gopay">GOOD</option>
+                                            <option value="mandiriva">Independent VA</option>
                                             <option value="briva">BRI VA</option>
                                             <option value="bcava">BCA VA</option>
                                         </select>

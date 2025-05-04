@@ -39,33 +39,91 @@
         <!--================Banner Area =================-->
 
         <!--================ Accomodation Area  =================-->
-        <section class="accomodation_area section_gap" id="types">
+
+        <section class="accomodation_area section_gap bg-ofcode" style="background-color:rgb(39, 42, 39)" id="types">
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_color">Hotel Types</h2>
+                    <h2 class="title_color text-white">Hotel Types</h2>
                 </div>
-                <div class="row mb_30">
-                    @foreach ($roomTypes as $item)
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="accomodation_item text-center">
-                                <div class="hotel_img">
+                <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach ($roomTypes as $index => $item)
+                            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                <div class="accomodation_item text-center">
+                                    <div class="hotel_img">
+                                        <a href="{{ route('detail.room', $item->id) }}">
+                                            <img src="{{ asset('images/tipekamar/'.$item->foto) }}" class="d-block w-100" style="max-width: 250px; margin: auto;" alt="{{ $item->name }}">
+                                        </a>
+                                        <a href="{{ route('detail.room', $item->id) }}" class="btn theme_btn button_hover mt-3">Book Now</a>
+                                    </div>
+                                    <a href="{{ route('detail.room', $item->id) }}"><h4 class="sec_h4 mt-3 text-white">{{ $item->name }}</h4></a>
                                     <a href="{{ route('detail.room', $item->id) }}">
-                                        <img src="{{ asset('images/tipekamar/'.$item->foto) }}" width="250px" alt="">
+                                        <h5 class="text-white">@currency($item->price)<small>/night</small></h5>
                                     </a>
-                                    <a href="{{ route('detail.room', $item->id) }}" class="btn theme_btn button_hover">Book Now</a>
+                                    <p class="text-white">Available Rooms: {{ $item->getTotalRooms()->count() }}</p>
                                 </div>
-                                <a href="{{ route('detail.room', $item->id) }}"><h4 class="sec_h4">{{ $item->name }}</h4></a>
-                                <a href="{{ route('detail.room', $item->id) }}">
-                                    <h5>@currency($item->price)<small>/night</small></h5>
-                                </a>
-                                <p>Available Rooms: {{ $item->getTotalRooms()->count() }}</p>
-                                
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        @foreach ($roomTypes as $index => $item)
+                            <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}" aria-current="{{ $index == 0 ? 'true' : 'false' }}" aria-label="Slide {{ $index + 1 }}"></button>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </section>
+        
+        <style>
+        /* Custom CSS for positioning and styling */
+        .carousel-indicators {
+            bottom: -60px; /* Move indicators below the carousel */
+            justify-content: center; /* Center horizontally */
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            background-color: #fff; /* White indicators for contrast on dark background */
+            width: 12px;
+            height: 12px;
+            border-radius: 50%; /* Circular indicators */
+            margin: 0 6px;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%; /* Narrower control buttons */
+            background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%);
+        }
+        
+        .carousel-item {
+            padding: 20px; /* Add padding for content spacing */
+        }
+        
+        .theme_btn {
+            background-color: #007bff; /* Example button color */
+            color: #fff;
+        }
+        
+        .theme_btn:hover {
+            background-color: #0056b3; /* Darker on hover */
+        }
+        
+        .sec_h4, h5, p {
+            color: #fff; /* Ensure text is visible on dark background */
+        }
+        </style>
         <!--================ Accomodation Area  =================-->
 
 
